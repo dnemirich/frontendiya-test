@@ -14,9 +14,9 @@ export const Placeholder = ({ type }: Props) => {
     <LayoutContainer className={s.container}>
       <div className={s.wrapper}>
         <div className={s.iconWrapper}>
-          {type === 'idle' && <Search className={s.icon} />}
-          {type === 'not-found' && <User className={s.icon} />}
-          {type === 'no-repos' && <NoRepo className={s.icon} />}
+          {type === 'idle' && <Search />}
+          {type === 'not-found' && <User />}
+          {type === 'no-repos' && <NoRepo />}
         </div>
         <p className={s.text}>
           {type === 'idle' && 'Start with searching a GitHub user'}
