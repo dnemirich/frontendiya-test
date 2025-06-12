@@ -5,12 +5,11 @@ import s from './userProfile.module.scss';
 import { useUserReposStore } from 'features/fetch-user-repos';
 import { useEffect } from 'react';
 import { Placeholder } from 'shared/ui/Placeholder';
+import { ITEMS_PER_PAGE } from 'shared/config/constants.ts';
 
 type Props = {
   user: User;
 };
-
-const ITEMS_PER_PAGE = 4;
 
 export const UserProfile = ({ user }: Props) => {
   const { repos, fetchRepos, currentPage } = useUserReposStore();

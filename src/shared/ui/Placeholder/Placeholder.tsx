@@ -1,7 +1,7 @@
 import { LayoutContainer } from 'shared/ui/LayoutContainer/LayoutContainer.tsx';
-import search from '/icons/searchIcon.svg';
-import user from '/icons/userIcon.svg';
-import noRepo from '/icons/noRepoIcon.svg';
+import { ReactComponent as Search } from 'shared/assets/icons/searchEnlargedIcon.svg';
+import { ReactComponent as User } from 'shared/assets/icons/userIcon.svg';
+import { ReactComponent as NoRepo } from 'shared/assets/icons/noRepoIcon.svg';
 
 import s from './placeholder.module.scss';
 
@@ -14,9 +14,9 @@ export const Placeholder = ({ type }: Props) => {
     <LayoutContainer className={s.container}>
       <div className={s.wrapper}>
         <div className={s.iconWrapper}>
-          {type === 'idle' && <img src={search} alt="search icon" className={s.icon} />}
-          {type === 'not-found' && <img src={user} alt="user icon" className={s.icon} />}
-          {type === 'no-repos' && <img src={noRepo} alt="no repos icon" className={s.icon} />}
+          {type === 'idle' && <Search className={s.icon} />}
+          {type === 'not-found' && <User className={s.icon} />}
+          {type === 'no-repos' && <NoRepo className={s.icon} />}
         </div>
         <p className={s.text}>
           {type === 'idle' && 'Start with searching a GitHub user'}

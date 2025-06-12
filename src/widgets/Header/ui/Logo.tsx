@@ -1,9 +1,9 @@
-import logo from '/icons/githubLogo.svg';
+import { ReactComponent as GithubLogo } from 'shared/assets/icons/githubLogo.svg';
 
 export const Logo = () => {
   return (
     <div>
-      <img src={logo} alt="github logo" />
+      <GithubLogo />
     </div>
   );
 };

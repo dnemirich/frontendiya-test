@@ -1,7 +1,7 @@
 import type { UserSummary } from '../model';
 import s from './userCard.module.scss';
-import followersIcon from '/icons/followersIcon.svg';
-import followingIcon from '/icons/followingIcon.svg';
+import { ReactComponent as Followers } from 'shared/assets/icons/followersIcon.svg';
+import { ReactComponent as Following } from 'shared/assets/icons/followingIcon.svg';
 
 type Props = {
   user: UserSummary;
@@ -19,11 +19,11 @@ export const UserCard = ({ user }: Props) => {
         </a>
         <div className={s.stats}>
           <div className={s.statsItem}>
-            <img src={followersIcon} alt="followers icon" className={s.icon} />
+            <Followers className={s.icon} />
             <span>{user.followers}</span>
           </div>
           <div className={s.statsItem}>
-            <img src={followingIcon} alt="following icon" className={s.icon} />
+            <Following className={s.icon} />
             <span>{user.following}</span>
           </div>
         </div>

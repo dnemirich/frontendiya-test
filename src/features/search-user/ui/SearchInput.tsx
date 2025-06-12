@@ -1,4 +1,4 @@
-import icon from '/icons/searchIcon.svg';
+import { ReactComponent as Search } from 'shared/assets/icons/searchIcon.svg';
 import s from './searchInput.module.scss';
 import { type FormEvent, useState } from 'react';
 import { useSearchUserStore } from '../model';
@@ -16,7 +16,7 @@ export const SearchInput = () => {
   return (
     <form className={s.inputWrapper} onSubmit={handleSubmit}>
       <div className={s.iconWrapper}>
-        <img src={icon} alt="search icon" className={s.icon} />
+        <Search className={s.icon} />
       </div>
       <input
         className={s.input}

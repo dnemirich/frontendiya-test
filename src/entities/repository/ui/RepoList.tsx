@@ -1,6 +1,9 @@
 import type { RepositorySummary } from '../model';
 import s from './repoList.module.scss';
 import ReactPaginate from 'react-paginate';
+import { ITEMS_PER_PAGE } from 'shared/config/constants.ts';
+import { ReactComponent as RightArrow } from 'shared/assets/icons/rightArrow.svg';
+import { ReactComponent as LeftArrow } from 'shared/assets/icons/leftArrow.svg';
 
 type Props = {
   repos: RepositorySummary[];
@@ -10,14 +13,12 @@ type Props = {
   onPageChange: (selectedItem: { selected: number }) => void;
 };
 
-const ITEMS_PER_PAGE = 4;
-
 export const RepoList = ({ repos, totalCount, totalPages, onPageChange, currentPage }: Props) => {
   const from = (currentPage - 1) * ITEMS_PER_PAGE + 1;
   const to = Math.min(currentPage * ITEMS_PER_PAGE, totalCount);
   return (
     <div className={s.listWrapper}>
-      <h2 className={s.heading}>Repositories({totalCount})</h2>
+      <h2 className={s.heading}>Repositories ({totalCount})</h2>
       <ul className={s.list}>
         {repos.map((repo) => (
           <li className={s.listItem} key={repo.id}>
@@ -36,8 +37,16 @@ export const RepoList = ({ repos, totalCount, totalPages, onPageChange, currentP
         <ReactPaginate
           containerClassName={s.pagination}
           activeClassName={s.active}
-          previousLabel={'<'}
-          nextLabel={'>'}
+          previousLabel={
+            <div className={s.navBtn}>
+              <LeftArrow />
+            </div>
+          }
+          nextLabel={
+            <div className={s.navBtn}>
+              <RightArrow />
+            </div>
+          }
           breakLabel={'...'}
           pageCount={totalPages}
           forcePage={currentPage - 1}
