@@ -1,5 +1,5 @@
 import { Header } from 'widgets/Header';
-import { Placeholder } from 'widgets/Placeholder';
+import { Placeholder } from 'shared/ui/Placeholder';
 import { UserProfile } from 'widgets/UserProfile';
 import { useSearchUserStore } from 'features/search-user/model/searchUserStore.ts';
 
@@ -10,8 +10,7 @@ export const HomePage = () => {
     <>
       <Header />
       <main>
-        {status === 'idle' && <Placeholder type="idle" />}
-        {status === 'not-found' && <Placeholder type="not-found" />}
+        {(status === 'idle' || status === 'not-found') && <Placeholder type={status} />}
         {status === 'success' && user && <UserProfile user={user} />}
       </main>
     </>
