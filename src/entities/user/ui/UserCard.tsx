@@ -1,10 +1,10 @@
-import type { UserShort } from '../model';
+import type { UserSummary } from '../model';
 import s from './userCard.module.scss';
 import followersIcon from '/icons/followersIcon.svg';
 import followingIcon from '/icons/followingIcon.svg';
 
 type Props = {
-  user: UserShort;
+  user: UserSummary;
 };
 
 export const UserCard = ({ user }: Props) => {
