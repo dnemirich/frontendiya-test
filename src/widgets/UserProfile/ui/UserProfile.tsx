@@ -1,8 +1,8 @@
 import { type User, UserCard, userMapper } from 'entities/user';
-import { LayoutContainer } from 'shared/ui/LayoutContainer/LayoutContainer.tsx';
+import { LayoutContainer } from 'shared/ui/LayoutContainer';
 import { mapRepo, RepoList } from 'entities/repository';
 import s from './userProfile.module.scss';
-import { useUserReposStore } from 'features/fetch-user-repos/model/userReposStore.ts';
+import { useUserReposStore } from 'features/fetch-user-repos';
 import { useEffect } from 'react';
 import { Placeholder } from 'shared/ui/Placeholder';
 

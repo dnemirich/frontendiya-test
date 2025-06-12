@@ -1,11 +1,4 @@
-:root {
-  --primary-light-color: #fff;
-  --bg-color: #f9f9f9;
-  --primary-dark-color: #000;
-  --accent-color: #0064eb;
-  --pale-color: #808080;
-  --main-font: 'Inter';
-}
+@import './variables.css';
 
 *,
 *::after,
@@ -19,7 +12,7 @@
 
 html {
   font-family: var(--main-font), sans-serif;
-  font-size: 10px;
+  font-size: var(--font-size-base);
   font-weight: 400;
   letter-spacing: 0.03em;
   color: var(--primary-dark-color);

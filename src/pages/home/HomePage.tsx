@@ -1,7 +1,7 @@
 import { Header } from 'widgets/Header';
 import { Placeholder } from 'shared/ui/Placeholder';
 import { UserProfile } from 'widgets/UserProfile';
-import { useSearchUserStore } from 'features/search-user/model/searchUserStore.ts';
+import { useSearchUserStore } from 'features/search-user';
 
 export const HomePage = () => {
   const { user, status } = useSearchUserStore();

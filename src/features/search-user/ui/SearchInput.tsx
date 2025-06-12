@@ -1,7 +1,7 @@
 import icon from '/icons/searchIcon.svg';
 import s from './searchInput.module.scss';
 import { type FormEvent, useState } from 'react';
-import { useSearchUserStore } from '../model/searchUserStore.ts';
+import { useSearchUserStore } from '../model';
 
 export const SearchInput = () => {
   const [value, setValue] = useState('');
