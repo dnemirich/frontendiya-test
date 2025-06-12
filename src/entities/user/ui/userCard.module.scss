@@ -1,0 +1,39 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+  padding-top: 4rem;
+}
+
+.avatar {
+  width: 28rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.infoBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+
+.link {
+  margin: 1.2rem 0 2.5rem;
+  font-size: 1.8rem;
+  color: var(--accent-color);
+}
+
+.stats {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.statsItem {
+  display: flex;
+  align-items: flex-end;
+  font-size: 1.6rem;
+}
