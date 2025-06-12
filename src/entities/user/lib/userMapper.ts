@@ -1,7 +1,7 @@
-import type { User, UserShort } from '../model';
+import type { User, UserSummary } from '../model';
 import { formatNumber } from './numberFormatter.ts';
 
-export const userMapper = (user: User): UserShort => {
+export const userMapper = (user: User): UserSummary => {
   const formatFollowersText = (count: number): string => {
     if (count === 0) return 'No followers';
     if (count === 1) return '1 follower';

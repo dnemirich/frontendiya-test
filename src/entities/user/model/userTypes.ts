@@ -33,7 +33,7 @@ export type User = {
   updated_at: string;
 };
 
-export type UserShort = Pick<User, 'avatar_url' | 'bio' | 'login' | 'html_url'> & {
+export type UserSummary = Pick<User, 'avatar_url' | 'bio' | 'login' | 'html_url'> & {
   followers: string;
   following: string;
 };
