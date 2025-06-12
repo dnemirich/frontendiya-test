@@ -1,4 +1,4 @@
-import { LayoutContainer } from '../LayoutContainer/LayoutContainer.tsx';
+import { LayoutContainer } from 'shared/ui/LayoutContainer/LayoutContainer.tsx';
 import search from '/icons/searchIcon.svg';
 import user from '/icons/userIcon.svg';
 

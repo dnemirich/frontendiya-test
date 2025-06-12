@@ -1,5 +1,5 @@
-import { Header } from '../../widgets/Header/ui/Header.tsx';
-import { Placeholder } from '../../shared/ui/Placeholder/Placeholder.tsx';
+import { Header } from 'widgets/Header';
+import { Placeholder } from 'widgets/Placeholder';
 
 export const HomePage = () => {
   let status;

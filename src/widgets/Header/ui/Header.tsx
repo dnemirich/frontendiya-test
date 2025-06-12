@@ -1,8 +1,8 @@
-import s from '../header.module.scss';
+import s from './header.module.scss';
 
 import { Logo } from './Logo.tsx';
-import { SearchInput } from '../../../features/search-user/ui/SearchInput.tsx';
-import { LayoutContainer } from '../../../shared/ui/LayoutContainer/LayoutContainer.tsx';
+import { SearchInput } from 'features/search-user/ui/SearchInput.tsx';
+import { LayoutContainer } from 'shared/ui/LayoutContainer/LayoutContainer.tsx';
 
 export const Header = () => {
   return (
