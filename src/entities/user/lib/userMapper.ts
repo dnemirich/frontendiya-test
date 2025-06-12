@@ -8,7 +8,6 @@ export const userMapper = (user: User): UserSummary => {
     return `${formatNumber(count)} followers`;
   };
 
-  // Функция для обработки подписок
   const formatFollowingText = (count: number): string => {
     if (count === 0) return 'Not following anyone';
     if (count === 1) return '1 following';
