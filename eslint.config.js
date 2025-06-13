@@ -8,7 +8,14 @@ import prettier from 'eslint-config-prettier';
 
 export default tseslint.config(
   {
-    ignores: ['dist', '**/*.d.ts', '**/__tests__/**', '**/__mocks__/**', 'vite.config.ts'],
+    ignores: [
+      'dist',
+      '**/*.d.ts',
+      '**/__tests__/**',
+      '**/__mocks__/**',
+      'vite.config.ts',
+      'cypress/',
+    ],
   },
   {
     files: ['**/*.{ts,tsx}'],

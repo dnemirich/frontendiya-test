@@ -12,7 +12,7 @@ type Props = {
 export const Placeholder = ({ type }: Props) => {
   return (
     <LayoutContainer className={s.container}>
-      <div className={s.wrapper}>
+      <div className={s.wrapper} id={type}>
         <div className={s.iconWrapper}>
           {type === 'idle' && <Search />}
           {type === 'not-found' && <User />}

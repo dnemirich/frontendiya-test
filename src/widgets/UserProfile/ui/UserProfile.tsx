@@ -31,7 +31,7 @@ export const UserProfile = ({ user }: Props) => {
 
   return (
     <LayoutContainer>
-      <div className={s.wrapper}>
+      <div className={s.wrapper} id={`user-profile-${user.id}`}>
         <UserCard user={cardInfo} />
         {repos.length === 0 ? (
           <Placeholder type={'no-repos'} />

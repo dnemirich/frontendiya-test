@@ -14,12 +14,13 @@ export const SearchInput = () => {
   };
 
   return (
-    <form className={s.inputWrapper} onSubmit={handleSubmit}>
+    <form className={s.inputWrapper} onSubmit={handleSubmit} id={'search-form'}>
       <div className={s.iconWrapper}>
         <Search className={s.icon} />
       </div>
       <input
         className={s.input}
+        id={'search-input'}
         type="text"
         placeholder="Enter GitHub username"
         value={value}
