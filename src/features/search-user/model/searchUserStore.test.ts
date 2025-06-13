@@ -1,6 +1,7 @@
 import { useSearchUserStore } from './searchUserStore';
 import { act } from 'react-dom/test-utils';
-import { vi } from 'vitest';
+import { describe, it, expect } from 'vitest';
+
 import { fetchUserByUsername } from 'entities/user';
 
 vi.mock('entities/user', () => ({
