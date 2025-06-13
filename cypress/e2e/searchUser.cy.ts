@@ -1,5 +1,3 @@
-import cypress from 'cypress';
-
 describe('User Search and Profile Display', () => {
   beforeEach(() => {
     cy.visit('/');
