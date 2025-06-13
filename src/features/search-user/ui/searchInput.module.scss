@@ -1,0 +1,30 @@
+.inputWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 50rem;
+  padding: 0.8rem 1.4rem;
+  background-color: var(--primary-light-color);
+  border-radius: 0.6rem;
+}
+
+.input {
+  width: 100%;
+  height: 100%;
+  font-family: var(--main-font), sans-serif;
+  font-size: 1.4rem;
+  color: var(--primary-dark-color);
+  background-color: unset;
+  border: none;
+  padding-left: 3rem;
+
+  &::placeholder {
+    color: var(--pale-color);
+  }
+}
+
+.iconWrapper {
+  position: absolute;
+  width: 2.4rem;
+  height: 2.4rem;
+  padding: 0.5rem;
+}
